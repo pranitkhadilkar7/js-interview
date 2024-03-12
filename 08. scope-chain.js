@@ -1,5 +1,3 @@
-'use strict'
-
 function calcAge (birthYear) {
     const age = 2024 - birthYear
 
@@ -16,6 +14,8 @@ function calcAge (birthYear) {
         // console.log(str) --> this gives error as str is declared with const which is block scoped. if declared with var then it wont give error
         console.log(millenial) // it won't give error
     }
+
+    printAge()
 }
 
 const firstName = 'Pranit'
