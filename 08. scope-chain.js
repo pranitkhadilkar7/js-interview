@@ -8,8 +8,9 @@ function calcAge (birthYear) {
         console.log(output)
 
         if (birthYear >= 1981 && birthYear <- 1996) {
+            const firstName = 'Steve'
             var millenial = true
-            const str = `Oh, and you are millenial, ${firstName}`
+            const str = `Oh, and you are millenial, ${firstName}` // this will print Steve as this veriable is available in current scope and no need to check in global scope
             console.log(str)
         }
         // console.log(str) --> this gives error as str is declared with const which is block scoped. if declared with var then it wont give error
