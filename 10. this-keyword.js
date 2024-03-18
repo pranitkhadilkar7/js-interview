@@ -1,4 +1,4 @@
-// "this" is a special veriable created for eaacj execution context (every function)
+// "this" is a special veriable created for each execution context (every function)
 // "this" takes the value of the owner of the function
 
 // "this" is not static. It's value depends on how the function is gettin called
