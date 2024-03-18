@@ -10,6 +10,13 @@
 
 // 3. Building the DOM tree: Using these tokens browser constructs tree like structure
 // known as DOM tree. This tree represents the hierarchical structure of the document
-// which each element, attribute and text node represented as a node in the tree
+// in which each element, attribute and text node represented as a node in the tree
 
-// 
+// 4. Node Objects: Each node in the DOM tree is represented by a corresponding object in memory
+// These object known as DOM nodes, have properties and function which can be used to interact with 
+// and manupulate the document
+
+// 5. Document Object: At the top of the DOM tree there is document object, which represents the entire HTML
+// or XML. This object serve as entry point for manupulating DOM
+
+// Rendering: Once the DOM tree is constructed, the browser uses it to render the content on the page.
