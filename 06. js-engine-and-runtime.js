@@ -16,4 +16,4 @@
 // 2. Compilation --> code is converted into machine code
 // 3. Execution --> happens immediately after compilation in call stack
 
-// runtime is a combination of js engine and web api (DOM, Timers, Fetch API etc)
+// runtime is a combination of js engine and web api and callback queue (DOM, Timers, Fetch API etc)
