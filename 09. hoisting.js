@@ -1,4 +1,4 @@
-// Hoisting makes some kind of variables accessible/usable even before they are decclared
+// Hoisting makes some kind of variables accessible/usable even before they are declared
 // Before execution, code is scanned for variable declaration (in the execution context creation phase)
 // and for each variable a new property is created in the execution contexts variable environment
 
@@ -24,7 +24,7 @@ var age = 29
 
 // 3. variabled declared with let, const
     // hoisted: false
-    // initial value: they are uninitialized. Hemce accessing them before delcaring gives error because they are kep in "temporal dead zone"
+    // initial value: they are uninitialized. Hence accessing them before delcaring gives error because they are kep in "temporal dead zone"
     // scope: block
 // console.log(firstName) // gives error
 let firstName = 'Pranit'

@@ -3,7 +3,7 @@
 // It stores all the necessary info required to that piece of code to get executed
 
 
-// For feach function call, execution context gets created
+// For each function call, execution context gets created
 // JS create global execution context for top level code
 // after that it create execution context for each function call
 // these execution context are kept in the call stack for execution. (on one another)
