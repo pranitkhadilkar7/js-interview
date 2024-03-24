@@ -1,5 +1,5 @@
 // Array destructuring
-// used for unwrapping the arra
+// used for unwrapping the array
 
 'use strict'
 
