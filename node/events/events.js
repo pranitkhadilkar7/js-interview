@@ -36,6 +36,8 @@ salesEmitter.emit('salesChanged')
 // stock count is 9
 // custom sales emitted
 
+
+// Creating a server
 const http = require('http')
 
 const server = http.createServer()
