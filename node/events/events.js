@@ -40,6 +40,7 @@ salesEmitter.emit('salesChanged')
 // Creating a server
 const http = require('http')
 
+// server is an instance of event emmitter class
 const server = http.createServer()
 
 server.on('request', (req, res) => {
