@@ -46,12 +46,27 @@ function writeFilePromise(filePath, data) {
     })
 }
 
-readFilePromise(`${__dirname}/breed.txt`).then(breed => {
-    return superagent.get(`https://dog.ceo/api/breed/${breed}/images/random`)
-}).then(res => {
-    return writeFilePromise(`${__dirname}/breed-link.txt`, res.body.message)
-}).then(msg => {
-    console.log(msg)
-}).catch(err => {
-    console.log(err)
-})
+// readFilePromise(`${__dirname}/breed.txt`).then(breed => {
+//     return superagent.get(`https://dog.ceo/api/breed/${breed}/images/random`)
+// }).then(res => {
+//     return writeFilePromise(`${__dirname}/breed-link.txt`, res.body.message)
+// }).then(msg => {
+//     console.log(msg)
+// }).catch(err => {
+//     console.log(err)
+// })
+
+// avoiding callback hell using async await
+const getDogPic = async () => {
+    try {
+        const breed = await readFilePromise(`${__dirname}/breed.txt`)
+        console.log(`Breed: ${breed}`)
+        const res = await superagent.get(`https://dog.ceo/api/breed/${breed}/images/random`)
+        console.log(res.body.message)
+        await writeFilePromise(`${__dirname}/breed-link.txt`, res.body.message)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getDogPic()
