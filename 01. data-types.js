@@ -7,7 +7,7 @@ let str = 'String'
 // 3. boolean: Logical type that can be true or false
 let bool = true
 
-// 4. undefined: Value taken by variable that is not yet defined
+// 4. undefined: Value taken by variable that is not yet initialized
 let unde; // if we console.log(unde) it will be undefined
 
 // 5. null: Specifies empty value
@@ -35,3 +35,7 @@ console.log(year) // undefined
 console.log(typeof year) // undefined
 
 console.log(typeof null) // object. This is a bug in JS
+
+// console.log({} === {}) // false
+console.log(null === null) // true
+console.log(undefined === undefined) // true

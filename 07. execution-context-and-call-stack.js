@@ -15,7 +15,7 @@
     // function declaration
     // arguments list. passed to that function
 // 2. Scope Chain: This conatain reference to all parent execution context
-    // this is because each function might access variabled in its parent function
+    // this is because each function might access variables in its parent function
     // to do this we need scope chain in each execution context
 /// 3. this keyword
 
