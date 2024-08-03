@@ -1,5 +1,5 @@
 // Currying in a technique in JS in which we transfer a function
-// taking multiple arguments into a sequence of function taking multiple arguments
+// taking multiple arguments into a sequence of function taking single arguments
 
 function sum (a, b, b) {
     return a + b + c
