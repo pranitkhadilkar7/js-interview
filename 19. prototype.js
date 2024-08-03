@@ -1,3 +1,7 @@
+// Prototype is a mechanism by using which objects inherits features from one another
+// When you create an object it is linked to prototype object
+// You can add properties and function to prototype object and all the objects linked to that prototype will get the prototype's property and function
+
 // Each function has property named prototype
 // all the objects created with constructor function will get access to constructor functions prototype
 // object does not have prototype. It can access the prototype of the parent function constructor using obj.__proto__
