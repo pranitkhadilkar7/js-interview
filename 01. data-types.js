@@ -26,7 +26,7 @@ console.log(typeof true) // boolean
 console.log(typeof 25) // number
 console.log(typeof 'Pranit') // string
 
-javascriptIsFun = 'YES!'
+javascriptIsFun = 'YES!'    
 
 console.log(typeof javascriptIsFun) // string
 

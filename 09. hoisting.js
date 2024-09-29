@@ -18,7 +18,7 @@ function calcAge (birthYear) {
     // hoisted: true
     // initial value: set to undefined
     // scope: function scope
-    // you can access the variabled declared with var before it is declared, but the value will be undefined
+    // you can access the variables declared with var before it is declared, but the value will be undefined
 console.log(age) // prints undefined
 var age = 29
 

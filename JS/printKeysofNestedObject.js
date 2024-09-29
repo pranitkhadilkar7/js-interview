@@ -1,5 +1,4 @@
 function printKeysOfNestedObject (obj, prefix = '') {
-
     for (let key in obj) {
         prefix ? console.log(prefix + ' ' + key) : console.log(key)
         const value = obj[key]
