@@ -39,3 +39,14 @@ console.log(typeof null) // object. This is a bug in JS
 // console.log({} === {}) // false
 console.log(null === null) // true
 console.log(undefined === undefined) // true
+
+function f1 () {
+    return 1
+}
+let f2 = function () {
+    return 2
+}
+let f3 = () => 3
+console.log(typeof f1) // function
+console.log(typeof f2) // function
+console.log(typeof f3) // function
