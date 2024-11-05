@@ -52,7 +52,7 @@ const myConst = "JS"; // myConst enters TDZ until this line
 
 // let myLet and const myConst: Both let and const are also hoisted, but they do not get initialized until their declaration line is reached. 
 // This period (from the beginning of the scope until the variable's initialization) is the Temporal Dead Zone. During this period, accessing 
-//     myLet or myConst will result in a ReferenceError.
+// myLet or myConst will result in a ReferenceError.
 
 // Why the TDZ Exists
 // The TDZ was introduced to encourage better coding practices by avoiding the use of uninitialized variables. With var, 
