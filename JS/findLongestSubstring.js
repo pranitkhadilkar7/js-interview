@@ -3,6 +3,7 @@ function findLongestSubstring(str) {
     let start = 0
     let end = 0
     let window = 0
+    let result = ''
 
     while (end < str.length) {
         if (!obj[str.charAt(end)]) {
@@ -10,7 +11,8 @@ function findLongestSubstring(str) {
             end++
         } else {
             let curWindow = end - start
-            window = curWindow > window ? curWindow : window
+            // window = curWindow > window ? curWindow : window
+            result = curWindow > window ? str.substring(start, end) : result
             start = obj[str.charAt(end)]
             end = obj[str.charAt(end)]
             obj = {}
@@ -18,9 +20,10 @@ function findLongestSubstring(str) {
     }
 
     let curWindow = end - start
-    window = curWindow > window ? curWindow : window
-
-    return window
+    // window = curWindow > window ? curWindow : window
+    result = curWindow > window ? str.substring(start, end) : result
+    // console.log('substring:', str.substring(start, end))
+    return result
 }
 
 console.log(findLongestSubstring('thisishowwedoit'))
