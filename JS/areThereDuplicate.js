@@ -1,10 +1,10 @@
 function areThereDuplicate(...arr) {
-    const obj = {}
+    const set = new Set()
     for (let el of arr) {
-        if (obj[el]) {
+        if (set.has(el)) {
             return true
         }
-        obj[el] = 'present'
+        set.add(el)
     }
     return false
 }
