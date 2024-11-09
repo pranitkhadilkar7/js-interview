@@ -13,6 +13,7 @@ function findLongestSubstring(str) {
             let curWindow = end - start
             // window = curWindow > window ? curWindow : window
             result = curWindow > window ? str.substring(start, end) : result
+            window = curWindow > window ? curWindow : window
             start = obj[str.charAt(end)]
             end = obj[str.charAt(end)]
             obj = {}

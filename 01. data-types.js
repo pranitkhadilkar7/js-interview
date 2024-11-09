@@ -50,3 +50,4 @@ let f3 = () => 3
 console.log(typeof f1) // function
 console.log(typeof f2) // function
 console.log(typeof f3) // function
+console.log(typeof []) // object
