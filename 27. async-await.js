@@ -136,3 +136,8 @@ async function getData4() {
         console.log(e);
     }
 }
+
+
+// Top level await
+
+// This is introduced in ES8
